@@ -1,0 +1,14 @@
+<!-- cart.component.html -->
+<button [routerLink]="['/products']">BACK</button>
+<h1>Cart</h1>
+
+<div class="cart">
+  <div class="cart-item" *ngFor="let item of cartItems">
+    <img class="img" [src]="item.product.imageUrl" alt="{{ item.product.name }}">
+    <h3>{{ item.product.name }}</h3>
+    <p>{{ item.product.price | currency }} x {{ item.quantity }}</p>
+    <button style="color:red" (click)="removeFromCart(item)">Remove</button>
+  </div>
+  <h3>Total: {{ total | currency }}</h3>
+ <button><a [routerLink]="['/checkout']">Checkout</a></button> 
+</div>

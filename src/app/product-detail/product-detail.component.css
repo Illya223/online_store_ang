@@ -1,0 +1,17 @@
+.img{
+    width: 300px;
+    height: 300px;
+}
+.description{
+    width: 500px;
+}
+button{
+    background-color: gray;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.details{
+    margin-left: 20px;
+}

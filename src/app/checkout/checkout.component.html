@@ -1,0 +1,20 @@
+<button style="margin:10px 20px; background-color: gray; color: black;" [routerLink]="['/cart']">BACK</button>
+<h1>Checkout</h1>
+<form (ngSubmit)="onSubmit()" #checkoutForm="ngForm">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required [(ngModel)]="checkoutData.name" name="name" #name="ngModel">
+    <div *ngIf="name.invalid && name.touched">Name is required</div>
+  </div>
+  <div>
+    <label for="address">Address:</label>
+    <input type="text" id="address" required [(ngModel)]="checkoutData.address" name="address" #address="ngModel">
+    <div *ngIf="address.invalid && address.touched">Address is required</div>
+  </div>
+  <div>
+    <label for="card">Credit Card:</label>
+    <input type="text" id="card" required [(ngModel)]="checkoutData.card" name="card" #card="ngModel">
+    <div *ngIf="card.invalid && card.touched">Credit Card is required</div>
+  </div>
+  <button type="submit" [disabled]="checkoutForm.invalid">Place Order</button>
+</form>

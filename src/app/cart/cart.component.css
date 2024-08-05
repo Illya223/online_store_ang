@@ -1,0 +1,15 @@
+.img{
+    width: 300px;
+    height: 300px;
+}
+button{
+    background-color: gray;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left:  20px;
+    
+}
+a{
+    text-decoration: none;
+}

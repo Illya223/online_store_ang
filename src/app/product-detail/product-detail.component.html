@@ -1,0 +1,9 @@
+<!-- product-detail.component.html -->
+<button [routerLink]="['/products']">BACK</button>
+<div *ngIf="product" class="details">
+  <img class="img" [src]="product.imageUrl" alt="{{ product.name }}">
+  <h2>{{ product.name }}</h2>
+  <p class="description">{{ product.description }}</p>
+  <p>{{ product.price | currency }}</p>
+  <button (click)="addToCart()">Add to Cart</button>
+</div>

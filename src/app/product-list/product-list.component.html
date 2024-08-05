@@ -1,0 +1,22 @@
+<!-- product-list.component.html -->
+
+<div class="product-list">
+  <div class="product-card" *ngFor="let product of products">
+    <img class="img" [src]="product.imageUrl" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <div class="part">
+        <p class="description">{{ product.description }}</p>
+        <p>{{ product.price | currency }}</p>
+        <div class="buttons" >
+        <button (click)="addToCart(product)">Add to Cart</button>
+    
+    <button [routerLink]="['/products', product.id]"> <a [routerLink]="['/products', product.id]">View Details</a></button>
+    </div>
+    </div>
+  </div>
+  
+</div>
+<div [routerLink]="['/cart']" style="display:flex; flex-direction: column; align-items: center; ">
+<img class="basket" src="src/app/imges/free-icon-shopping-basket-1077979.png">
+<a [routerLink]="['/cart']" style="color:green;">Move to cart</a>
+</div>

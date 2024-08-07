@@ -13,3 +13,9 @@ button{
 a{
     text-decoration: none;
 }
+@media (max-width: 350px) {
+    .img{
+        width: 250px;
+        height: 250px;
+    }
+}

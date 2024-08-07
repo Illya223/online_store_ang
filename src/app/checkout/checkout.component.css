@@ -16,6 +16,7 @@ form {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    margin: 0 10px;
   }
   
   button {
@@ -29,3 +30,4 @@ form {
   button[disabled] {
     background-color: #ccc;
   }
+  

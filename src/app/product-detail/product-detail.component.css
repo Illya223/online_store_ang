@@ -15,3 +15,21 @@ button{
 .details{
     margin-left: 20px;
 }
+@media (max-width: 550px) {
+    .description{
+        width: 300px;
+        font-size: 12px;
+    }
+    
+}
+@media (max-width: 330px) {
+    .img{
+        width: 240px;
+    height: 240px;
+    }
+    .description{
+        width: 250px;
+        font-size: 12px;
+    }
+
+}

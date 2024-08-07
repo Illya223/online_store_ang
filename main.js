@@ -226,7 +226,7 @@ var CartService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".img{\r\n    width: 300px;\r\n    height: 300px;\r\n}\r\nbutton{\r\n    background-color: gray;\r\n    padding: 10px 20px;\r\n    border: none;\r\n    cursor: pointer;\r\n    margin-left:  20px;\r\n    \r\n}\r\na{\r\n    text-decoration: none;\r\n}"
+module.exports = ".img{\r\n    width: 300px;\r\n    height: 300px;\r\n}\r\nbutton{\r\n    background-color: gray;\r\n    padding: 10px 20px;\r\n    border: none;\r\n    cursor: pointer;\r\n    margin-left:  20px;\r\n    \r\n}\r\na{\r\n    text-decoration: none;\r\n}\r\n@media (max-width: 350px) {\r\n    .img{\r\n        width: 250px;\r\n        height: 250px;\r\n    }\r\n}"
 
 /***/ }),
 
@@ -302,7 +302,7 @@ var CartComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "form {\r\n    max-width: 600px;\r\n    margin: 0 auto;\r\n  }\r\n  \r\n  div {\r\n    margin-bottom: 10px;\r\n  }\r\n  \r\n  label {\r\n    display: block;\r\n    margin-bottom: 5px;\r\n  }\r\n  \r\n  input {\r\n    width: 100%;\r\n    padding: 8px;\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  button {\r\n    padding: 10px 20px;\r\n    background-color: #007bff;\r\n    color: #fff;\r\n    border: none;\r\n    cursor: pointer;\r\n  }\r\n  \r\n  button[disabled] {\r\n    background-color: #ccc;\r\n  }"
+module.exports = "form {\r\n    max-width: 600px;\r\n    margin: 0 auto;\r\n  }\r\n  \r\n  div {\r\n    margin-bottom: 10px;\r\n  }\r\n  \r\n  label {\r\n    display: block;\r\n    margin-bottom: 5px;\r\n  }\r\n  \r\n  input {\r\n    width: 100%;\r\n    padding: 8px;\r\n    box-sizing: border-box;\r\n    margin: 0 10px;\r\n  }\r\n  \r\n  button {\r\n    padding: 10px 20px;\r\n    background-color: #007bff;\r\n    color: #fff;\r\n    border: none;\r\n    cursor: pointer;\r\n  }\r\n  \r\n  button[disabled] {\r\n    background-color: #ccc;\r\n  }\r\n  "
 
 /***/ }),
 
@@ -393,7 +393,7 @@ var CheckoutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".img{\r\n    width: 300px;\r\n    height: 300px;\r\n}\r\n.description{\r\n    width: 500px;\r\n}\r\nbutton{\r\n    background-color: gray;\r\n    padding: 10px 20px;\r\n    margin: 10px 20px;\r\n    border: none;\r\n    cursor: pointer;\r\n}\r\n.details{\r\n    margin-left: 20px;\r\n}"
+module.exports = ".img{\r\n    width: 300px;\r\n    height: 300px;\r\n}\r\n.description{\r\n    width: 500px;\r\n}\r\nbutton{\r\n    background-color: gray;\r\n    padding: 10px 20px;\r\n    margin: 10px 20px;\r\n    border: none;\r\n    cursor: pointer;\r\n}\r\n.details{\r\n    margin-left: 20px;\r\n}\r\n@media (max-width: 550px) {\r\n    .description{\r\n        width: 300px;\r\n        font-size: 12px;\r\n    }\r\n    \r\n}\r\n@media (max-width: 330px) {\r\n    .img{\r\n        width: 240px;\r\n    height: 240px;\r\n    }\r\n    .description{\r\n        width: 250px;\r\n        font-size: 12px;\r\n    }\r\n\r\n}"
 
 /***/ }),
 
